@@ -1,0 +1,11 @@
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\bin\Debug\net8.0\MB.Domain.deps.json
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\bin\Debug\net8.0\MB.Domain.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\bin\Debug\net8.0\MB.Domain.pdb
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\obj\Debug\net8.0\MB.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\obj\Debug\net8.0\MB.Domain.AssemblyInfoInputs.cache
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\obj\Debug\net8.0\MB.Domain.AssemblyInfo.cs
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\obj\Debug\net8.0\MB.Domain.csproj.CoreCompileInputs.cache
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\obj\Debug\net8.0\MB.Domain.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\obj\Debug\net8.0\refint\MB.Domain.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\obj\Debug\net8.0\MB.Domain.pdb
+D:\Atria\MyPrj\MasterBlogger\MB.Domain\obj\Debug\net8.0\ref\MB.Domain.dll

@@ -1,0 +1,17 @@
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net8.0\MB.Infrastructure.EFCore.deps.json
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net8.0\MB.Infrastructure.EFCore.runtimeconfig.json
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net8.0\MB.Infrastructure.EFCore.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net8.0\MB.Infrastructure.EFCore.pdb
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net8.0\MB.Domain.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net8.0\MB.Domain.pdb
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.csproj.AssemblyReference.cache
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.AssemblyInfoInputs.cache
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.AssemblyInfo.cs
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.csproj.CoreCompileInputs.cache
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.csproj.CopyComplete
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\refint\MB.Infrastructure.EFCore.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.pdb
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\MB.Infrastructure.EFCore.genruntimeconfig.cache
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net8.0\ref\MB.Infrastructure.EFCore.dll
