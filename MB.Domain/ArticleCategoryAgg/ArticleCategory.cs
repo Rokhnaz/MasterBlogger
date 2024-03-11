@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleCategoryAgg.Services;
 
 namespace MB.Domain.ArticleCategoryAgg
@@ -15,6 +16,7 @@ namespace MB.Domain.ArticleCategoryAgg
         public string Title { get;private set; }
         public bool IsDeleted { get;private set; }
         public DateTime CreationDate { get;private set; }
+        public ICollection<Article> Articles { get; set; }
 
         public ArticleCategory(string title,IArticleCategoryValidatorService articleCategoryValidatorService)
         {
@@ -24,6 +26,7 @@ namespace MB.Domain.ArticleCategoryAgg
             Title = title;
             IsDeleted = false;
             CreationDate = DateTime.Now;   
+            Articles = new List<Article>();
         }
 
         public void Rename(string title)
