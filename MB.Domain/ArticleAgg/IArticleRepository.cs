@@ -14,5 +14,6 @@ namespace MB.Domain.ArticleAgg
         void CreateAndSave(Article article);
         void Save();
         Article Get(long id);
+        bool Exists(string title);
     }
 }
