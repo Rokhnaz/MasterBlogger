@@ -11,6 +11,7 @@ namespace MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleCategoryManag
         public RenameArticleCategory ArticleCategory { get; set; }
         private readonly IArticleCategoryApplication _articleCategoryApplication;
 
+
         public EditModel(IArticleCategoryApplication articleCategoryApplication)
         {
             _articleCategoryApplication = articleCategoryApplication;   

@@ -35,5 +35,14 @@ namespace MB.Domain.ArticleAgg
             CreationDate = DateTime.Now;
             ArticleCategoryId = articleCategoryId;  
         }
+
+        public void Edit(string title, string shortDiscription, string image, string content, long articleCategoryId)
+        {
+            Title = title;
+            ShortDiscription = shortDiscription;
+            Image = image;
+            Content = content;
+            ArticleCategoryId = articleCategoryId;
+        }
     }
 }

@@ -24,6 +24,11 @@ namespace MB.Infrastructure.EFCore.Repositories
             Save();
         }
 
+        public Article Get(long id)
+        {
+            return _context.Articles.FirstOrDefault(x => x.Id == id);
+        }
+
         public List<ArticleViewModel> GetList()
         {
             return _context.Articles.Include(x => x.ArticleCategory).Select(x => new ArticleViewModel()
