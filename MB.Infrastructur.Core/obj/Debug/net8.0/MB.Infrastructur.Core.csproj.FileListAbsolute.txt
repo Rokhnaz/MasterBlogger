@@ -19,3 +19,4 @@ D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\MB.Infrastru
 D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\refint\MB.Infrastructur.Core.dll
 D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\MB.Infrastructur.Core.pdb
 D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\ref\MB.Infrastructur.Core.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\MB.Infrastructur.Core.sourcelink.json

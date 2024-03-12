@@ -9,3 +9,4 @@ D:\Atria\MyPrj\MasterBlogger\MB.Application.Contracts\obj\Debug\net8.0\MB.Applic
 D:\Atria\MyPrj\MasterBlogger\MB.Application.Contracts\obj\Debug\net8.0\refint\MB.Application.Contracts.dll
 D:\Atria\MyPrj\MasterBlogger\MB.Application.Contracts\obj\Debug\net8.0\MB.Application.Contracts.pdb
 D:\Atria\MyPrj\MasterBlogger\MB.Application.Contracts\obj\Debug\net8.0\ref\MB.Application.Contracts.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Application.Contracts\obj\Debug\net8.0\MB.Application.Contracts.sourcelink.json

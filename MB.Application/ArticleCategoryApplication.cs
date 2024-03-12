@@ -30,6 +30,7 @@ namespace MB.Application
         public void create(CreateArticleCategory command)
         {
             var articleCategory = new ArticleCategory(command.Title,_articleCategoryValidatorService);
+
             _articleCategoryRepository.Add(articleCategory);
 
         }

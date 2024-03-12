@@ -11,16 +11,19 @@ namespace MB.Domain.ArticleCategoryAgg
 {
     public class ArticleCategory
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
         public string Title { get;private set; }
         public bool IsDeleted { get;private set; }
         public DateTime CreationDate { get;private set; }
         public ICollection<Article> Articles { get; set; }
 
+        protected ArticleCategory()
+        {
+                
+        }
         public ArticleCategory(string title,IArticleCategoryValidatorService articleCategoryValidatorService)
         {
-           // GuardAgainstEmptyTitle(title);
+            GuardAgainstEmptyTitle(title);
 
             articleCategoryValidatorService.CheckThatThisRecordAlreadyExists(title);
             Title = title;
@@ -31,7 +34,7 @@ namespace MB.Domain.ArticleCategoryAgg
 
         public void Rename(string title)
         {
-            //GuardAgainstEmptyTitle(Title);
+            GuardAgainstEmptyTitle(Title);
 
             Title = title;
         }

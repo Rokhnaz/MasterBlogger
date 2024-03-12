@@ -15,7 +15,7 @@ namespace MB.Infrastructure.EFCore.Mappings
         {
             builder.ToTable("ArticleCategories");
             builder.HasKey(k => k.Id);
-            builder.Property(e => e.Id).ValueGeneratedOnAdd(); 
+            //builder.Property(e => e.Id).ValueGeneratedOnAdd(); 
             builder.Property(x => x.Title);
             builder.Property(x => x.CreationDate);
             builder.Property(x => x.IsDeleted);
