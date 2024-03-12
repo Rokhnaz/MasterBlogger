@@ -18,6 +18,12 @@ namespace MB.Infrastructure.EFCore.Repositories
             _context = context; 
         }
 
+        public void CreateAndSave(Article article)
+        {
+            _context.Articles.Add(article);
+            Save();
+        }
+
         public List<ArticleViewModel> GetList()
         {
             return _context.Articles.Include(x => x.ArticleCategory).Select(x => new ArticleViewModel()
@@ -29,6 +35,11 @@ namespace MB.Infrastructure.EFCore.Repositories
                 CreationDate = x.CreationDate.ToString()
             }).ToList();
 
+        }
+
+        public void Save()
+        {
+            _context.SaveChanges();
         }
     }
 }
