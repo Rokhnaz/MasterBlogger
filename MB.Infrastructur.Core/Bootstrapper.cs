@@ -3,10 +3,12 @@ using MB.Application.Contracts.ArticleCategory;
 using Microsoft.Extensions.DependencyInjection;
 using System.Security.Authentication.ExtendedProtection;
 using MB.Application.Contracts.Article;
+using MB.Application.Contracts.Comment;
 using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleAgg.Services;
 using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.ArticleCategoryAgg.Services;
+using MB.Domain.CommentAgg;
 using MB.Infrastructure.EFCore;
 using MB.Infrastructure.EFCore.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +27,8 @@ namespace MB.Infrastructur.Core
             services.AddTransient<IArticleCategoryValidatorService, ArticleCategoryValidatorService>();
             services.AddTransient<IArticleValidatorService, ArticleValidatorService>();
             services.AddTransient<IArticleQuery, ArticleQuery>();
+            services.AddTransient<ICommentApplication, CommentApplication>();
+            services.AddTransient<ICommentRepository, CommentRepository>();
 
             services.AddDbContext<MasterBloggerContext>(options =>
                 options.UseSqlServer(connectionString));
