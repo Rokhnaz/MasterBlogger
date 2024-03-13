@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MB.Presentation.MVCCore", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MB.Infrastructur.Core", "MB.Infrastructur.Core\MB.Infrastructur.Core.csproj", "{B286DF64-E4DB-4089-BD97-E591BE1B32E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MB.Infrastructure.Query", "MB.Infrastructure.Query\MB.Infrastructure.Query.csproj", "{CBC234E7-CECE-4744-9020-A90FAB624214}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{B286DF64-E4DB-4089-BD97-E591BE1B32E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B286DF64-E4DB-4089-BD97-E591BE1B32E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B286DF64-E4DB-4089-BD97-E591BE1B32E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC234E7-CECE-4744-9020-A90FAB624214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC234E7-CECE-4744-9020-A90FAB624214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC234E7-CECE-4744-9020-A90FAB624214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC234E7-CECE-4744-9020-A90FAB624214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

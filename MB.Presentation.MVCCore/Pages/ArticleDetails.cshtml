@@ -1,0 +1,37 @@
+﻿@page "{id:long}"
+@model MB.Presentation.MVCCore.Pages.ArticleDetailsModel
+@{
+}
+<main class="post blog-post col-lg-12">
+    <div class="container">
+        <div >
+            <div class="post-thumbnail">
+                <img src="@Model.Article.Image" alt="@Model.Article.Title" title="@Model.Article.Title" class="img-fluid" />
+            </div>
+            <div class="post-details">
+                <div class="post post-meta d-flex justify-content-between">
+                    <div class="category">
+                        <a href="">@Model.Article.ArticleCategory</a>
+                    </div>
+                </div>
+                <h1>
+                    @Model.Article.Title
+                    <a href="#">
+                        <i class="fa fa-bookmark-o"></i>
+                    </a>
+                </h1>
+                <div class="post-footer d-flex align-items-center flex-column flex-sm-row">
+                    <div class="d-flex align-items-center flex-wrap">
+                        <div class="date"><i class="icon-clock"></i>@Model.Article.CreationDate</div>
+                        <div class="comment meta-last"><i class="icon-comment"></i>12</div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>@Model.Article.ShortDescription</p>
+                    @Model.Article.Content
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>

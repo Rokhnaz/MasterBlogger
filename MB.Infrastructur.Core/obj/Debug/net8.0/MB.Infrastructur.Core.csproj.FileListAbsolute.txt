@@ -20,3 +20,5 @@ D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\refint\MB.In
 D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\MB.Infrastructur.Core.pdb
 D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\ref\MB.Infrastructur.Core.dll
 D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\obj\Debug\net8.0\MB.Infrastructur.Core.sourcelink.json
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\bin\Debug\net8.0\MB.Infrastructure.Query.dll
+D:\Atria\MyPrj\MasterBlogger\MB.Infrastructur.Core\bin\Debug\net8.0\MB.Infrastructure.Query.pdb
