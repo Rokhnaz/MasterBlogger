@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MB.Domain.ArticleCategoryAgg;
+using MB.Domain.CommentAgg;
 
 namespace MB.Domain.ArticleAgg
 {
@@ -18,6 +19,7 @@ namespace MB.Domain.ArticleAgg
         public DateTime CreationDate { get; private set; }
         public long ArticleCategoryId { get; private set; }
         public ArticleCategory ArticleCategory { get; private set; }
+        public ICollection<Comment> Comments { get; private set; }
 
 
         protected Article()
@@ -36,7 +38,8 @@ namespace MB.Domain.ArticleAgg
             Content = content;
             IsDeleted = false;
             CreationDate = DateTime.Now;
-            ArticleCategoryId = articleCategoryId;  
+            ArticleCategoryId = articleCategoryId; 
+            Comments= new List<Comment>();
         }
 
         private static void Validate(string title, long articleCategoryId)
