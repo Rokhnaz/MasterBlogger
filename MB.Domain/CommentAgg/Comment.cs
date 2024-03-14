@@ -31,5 +31,14 @@ namespace MB.Domain.CommentAgg
             CreationDate = DateTime.Now;
             ArticleId = articleId;
         }
+
+        public void Confirm()
+        {
+            Status = Statuses.Confirmed;
+        }
+        public void Cancel()
+        {
+            Status = Statuses.Canceled;
+        }
     }
 }

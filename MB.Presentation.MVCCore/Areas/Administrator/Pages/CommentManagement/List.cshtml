@@ -49,14 +49,14 @@
                         <td>
                             @if (Comment.Status == Statuses.New)
                             {
-@*                                 <form method="post" asp-page-handler="Confirm" class="float-left">
+                                <form method="post" asp-page-handler="Confirm" class="float-left">
                                     <button class="btn btn-success">Confirm</button>
                                     <input type="hidden" name="id" value="@Comment.Id"/>
                                 </form>
                                 <form method="post" asp-page-handler="Cancel" class="float-left">
                                     <button class="btn btn-success">Cancel</button>
                                     <input type="hidden" name="id" value="@Comment.Id"/>
-                                </form> *@
+                                </form>
                             }
                         </td>
                     </tr>
