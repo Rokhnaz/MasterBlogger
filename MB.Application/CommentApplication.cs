@@ -10,18 +10,23 @@ namespace MB.Application
 {
     public class CommentApplication:ICommentApplication
     {
-        private readonly ICommentRepository _commentApplication;
+        private readonly ICommentRepository _commentRepository;
 
         public CommentApplication(ICommentRepository commentApplication)
         {
-            _commentApplication = commentApplication;
+            _commentRepository = commentApplication;
         }
 
         public void Add(AddComment command)
         {
             var comment = new Comment(command.Name, command.Email, command.Message, command.ArticleId);
-           _commentApplication.CreateAndSave(comment);
-           _commentApplication.Save();
+            _commentRepository.CreateAndSave(comment);
+            _commentRepository.Save();
+        }
+
+        public List<CommentViewModel> GetList()
+        {
+            return _commentRepository.GetList();
         }
     }
 }
