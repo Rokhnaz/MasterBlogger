@@ -1,6 +1,7 @@
 ﻿using MB.Application.Contracts.ArticleCategory;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,22 +23,22 @@ namespace MB.Application
 
         public void Activated(long id)
         {
-            var ArticleCategory = _articleCategoryRepository.GetBy(id);
+            var ArticleCategory = _articleCategoryRepository.Get(id);
             ArticleCategory.Activate();
-            _articleCategoryRepository.SaveChanges();
+           // _articleCategoryRepository.SaveChanges();
         }
 
         public void create(CreateArticleCategory command)
         {
             var articleCategory = new ArticleCategory(command.Title,_articleCategoryValidatorService);
 
-            _articleCategoryRepository.Add(articleCategory);
+            _articleCategoryRepository.Create(articleCategory);
 
         }
 
         public RenameArticleCategory GetBy(long id)
         {
-            var ArticleCategory = _articleCategoryRepository.GetBy(id);
+            var ArticleCategory = _articleCategoryRepository.Get(id);
             return new RenameArticleCategory()
             {
                 Id = ArticleCategory.Id,
@@ -48,33 +49,27 @@ namespace MB.Application
         public List<ArticleCategoryViewModel> List()
         {
             var articleCategories = _articleCategoryRepository.GetAll();
-            List<ArticleCategoryViewModel> ACViewModel= new List<ArticleCategoryViewModel>();
-            foreach (var item in articleCategories)
+            return articleCategories.Select(x => new ArticleCategoryViewModel()
             {
-                var ac = new ArticleCategoryViewModel();
-                ac.Id = item.Id;
-                ac.Title = item.Title;
-                ac.IsDeleted = item.IsDeleted;
-                ac.CreationDate = item.CreationDate.ToString();
-
-                ACViewModel.Add(ac);
-            }
-
-            return ACViewModel;
+                Id = x.Id,
+                Title = x.Title,
+                IsDeleted = x.IsDeleted,
+                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+            }).OrderByDescending(x => x.Id).ToList();
         }
 
         public void Remove(long id)
         {
-            var ArticleCategory = _articleCategoryRepository.GetBy(id);
+            var ArticleCategory = _articleCategoryRepository.Get(id);
             ArticleCategory.Remove();
-            _articleCategoryRepository.SaveChanges();
+            //_articleCategoryRepository.SaveChanges();
         }
 
         public void Rename(RenameArticleCategory command)
         {
-            var articleCategory = _articleCategoryRepository.GetBy(command.Id);
+            var articleCategory = _articleCategoryRepository.Get(command.Id);
             articleCategory.Rename(command.Title);
-            _articleCategoryRepository.SaveChanges();
+           // _articleCategoryRepository.SaveChanges();
         }
 
     }
