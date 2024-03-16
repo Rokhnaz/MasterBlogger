@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _01_Framework.Infrastructure;
 using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.ArticleCategoryAgg.Services;
 
@@ -14,25 +15,34 @@ namespace MB.Application
     {
         private readonly IArticleCategoryRepository _articleCategoryRepository;
         private readonly IArticleCategoryValidatorService _articleCategoryValidatorService;
+        private readonly IUnitofWork _unitofWork;
 
-        public ArticleCategoryApplication(IArticleCategoryRepository articleCategoryRepository, IArticleCategoryValidatorService articleCategoryValidatorService)
+        public ArticleCategoryApplication(IArticleCategoryRepository articleCategoryRepository, IArticleCategoryValidatorService articleCategoryValidatorService, IUnitofWork unitofWork)
         {
             _articleCategoryRepository = articleCategoryRepository;
             _articleCategoryValidatorService = articleCategoryValidatorService;
+            _unitofWork = unitofWork;   
         }
 
         public void Activated(long id)
         {
+            _unitofWork.BeginTran();
+
             var ArticleCategory = _articleCategoryRepository.Get(id);
             ArticleCategory.Activate();
            // _articleCategoryRepository.SaveChanges();
+
+           _unitofWork.CommitTran();
         }
 
         public void create(CreateArticleCategory command)
         {
-            var articleCategory = new ArticleCategory(command.Title,_articleCategoryValidatorService);
+            _unitofWork.BeginTran();
 
+            var articleCategory = new ArticleCategory(command.Title,_articleCategoryValidatorService);
             _articleCategoryRepository.Create(articleCategory);
+
+            _unitofWork.CommitTran();
 
         }
 
@@ -60,16 +70,24 @@ namespace MB.Application
 
         public void Remove(long id)
         {
+            _unitofWork.BeginTran();
+
             var ArticleCategory = _articleCategoryRepository.Get(id);
             ArticleCategory.Remove();
             //_articleCategoryRepository.SaveChanges();
+
+            _unitofWork.CommitTran();
         }
 
         public void Rename(RenameArticleCategory command)
         {
+            _unitofWork.BeginTran();
+
             var articleCategory = _articleCategoryRepository.Get(command.Id);
             articleCategory.Rename(command.Title);
            // _articleCategoryRepository.SaveChanges();
+
+           _unitofWork.CommitTran();
         }
 
     }
