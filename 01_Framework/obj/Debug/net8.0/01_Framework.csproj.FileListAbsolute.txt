@@ -1,12 +1,12 @@
-D:\Atria\MyPrj\MasterBlogger\01_Framework\bin\Debug\net8.0\01_Framework.deps.json
-D:\Atria\MyPrj\MasterBlogger\01_Framework\bin\Debug\net8.0\01_Framework.dll
-D:\Atria\MyPrj\MasterBlogger\01_Framework\bin\Debug\net8.0\01_Framework.pdb
-D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.csproj.AssemblyReference.cache
 D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.GeneratedMSBuildEditorConfig.editorconfig
 D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.AssemblyInfoInputs.cache
 D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.AssemblyInfo.cs
 D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.csproj.CoreCompileInputs.cache
 D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.sourcelink.json
+D:\Atria\MyPrj\MasterBlogger\01_Framework\bin\Debug\net8.0\01_Framework.deps.json
+D:\Atria\MyPrj\MasterBlogger\01_Framework\bin\Debug\net8.0\01_Framework.dll
+D:\Atria\MyPrj\MasterBlogger\01_Framework\bin\Debug\net8.0\01_Framework.pdb
+D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.csproj.AssemblyReference.cache
 D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.dll
 D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\refint\01_Framework.dll
 D:\Atria\MyPrj\MasterBlogger\01_Framework\obj\Debug\net8.0\01_Framework.pdb

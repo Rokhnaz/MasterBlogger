@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MB.Domain.ArticleCategoryAgg.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -17,8 +18,9 @@ namespace MB.Domain.ArticleCategoryAgg.Services
         }
         public void CheckThatThisRecordAlreadyExists(string title)
         {
-            if (_articleCategoryRepository.Exists(x=>x.Title==title))
-                throw new Exception();
+            if (_articleCategoryRepository.Exists(x => x.Title == title))
+                // throw new Exception();
+                throw new DuplicatedRecordException("This record already exist");
         }
     }
 }
